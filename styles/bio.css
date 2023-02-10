@@ -1,1 +1,144 @@
-/*# sourceMappingURL=bio.css.map */
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("../assets/Font/AvenirNextLTPro-Regular.woff") format("woff");
+  src: url("../assets/Font/AvenirNextLTPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff") format("woff");
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff") format("woff");
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNextLTPro";
+}
+
+.header {
+  background-color: #323232;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav__logo {
+  height: 1.25rem;
+  width: 7.5rem;
+  margin: 1rem;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+.nav__item, .nav__item--active, .nav__item:hover, .nav__item--active:hover {
+  font-weight: 400;
+  list-style-type: none;
+  width: 50%;
+  text-align: center;
+  padding: 0.7rem;
+}
+.nav__item--active, .nav__item:hover, .nav__item--active:hover {
+  border-bottom: 0.2rem solid #FFFFFF;
+}
+.nav__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url(../assets/Images/hero-bio.jpg);
+  height: 18rem;
+  background-size: cover;
+  background-position: center;
+}
+.hero__title {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding-left: 1rem;
+  z-index: 999;
+}
+.hero__overlay {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  height: 18rem;
+  background-color: #323232;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.bio {
+  margin: 1rem;
+}
+.bio__box {
+  margin: 1rem;
+}
+.bio__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.bio__image {
+  width: 100%;
+}
+.bio__quote {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+
+.gallery {
+  background-color: #FAFAFA;
+}
+.gallery__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+.gallery__item {
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer__icons {
+  display: flex;
+  gap: 2rem;
+}/*# sourceMappingURL=bio.css.map */
