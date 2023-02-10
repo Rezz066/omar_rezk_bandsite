@@ -72,7 +72,7 @@ body{
         @include tablet {
             margin: 2.25rem;
             padding: 0;
-        }
+            }
 
             
         }
@@ -82,22 +82,91 @@ body{
         text-decoration: none;
         list-style-type: none;
 
-
         &--active{
             @extend .nav__item;
             border-bottom: .1rem solid $primary-color-white;
             padding-bottom: .7rem;
+
             @include tablet{
                 @extend .nav__item;
             border-bottom: .1rem solid $primary-color-white;
             padding-bottom: 2.25rem;
             font-weight: 600;
             }
-            
 
         }
 
     } 
 }
 
+.footer{
+    background-color: $primary-color-black;
+    color: $primary-color-white;
+    padding: 1rem;
+    font-family: 'AvenirNextLTPro';
+
+    &__social{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 600;
+        padding: 1.5rem 0 1rem 0;
+    }
+
+    &__box{
+        display: flex;
+        gap: 2rem;
+        padding-bottom: 1rem;
+
+    }
+
+    &__icons{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &__name{
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    &__address{
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+
+    &__email{
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+
+    &__booking{
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+
+    &__logo{
+        width: 7.5rem;
+        height: 1.25rem;
+
+    }
+
+    &__copyright{
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+    }
+}
     

@@ -102,6 +102,65 @@ body {
   }
 }
 
+.footer {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 1rem;
+  font-family: "AvenirNextLTPro";
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 0 1rem 0;
+}
+.footer__box {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+.footer__icons {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer__name {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.footer__address {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.footer__email {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.footer__booking {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.footer__logo {
+  width: 7.5rem;
+  height: 1.25rem;
+}
+.footer__copyright {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -226,9 +285,7 @@ body {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 400;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-    padding-bottom: 1rem;
+    padding: 0 2.25rem 1rem 2.25rem;
     -moz-columns: 2;
          columns: 2;
   }
@@ -249,14 +306,10 @@ body {
   .gallery__title {
     font-size: 2.25rem;
     font-weight: 600;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-    padding-bottom: 1rem;
+    padding: 3rem 2.25rem 1rem 2.25rem;
   }
 }
 .gallery__box {
-  padding-top: 1.5rem;
-  padding-left: 1rem;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -272,24 +325,7 @@ body {
 @media screen and (min-width: 768px) {
   .gallery__item {
     width: 33%;
+    padding: 0 2.25rem 1rem 2.25rem;
     padding: 0.8rem;
   }
-}
-
-.footer {
-  background-color: #323232;
-  color: #FFFFFF;
-  padding: 1rem;
-}
-.footer__social {
-  display: flex;
-  flex-direction: column;
-}
-.footer__title {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.footer__icons {
-  display: flex;
-  gap: 2rem;
 }/*# sourceMappingURL=bio.css.map */
