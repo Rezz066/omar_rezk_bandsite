@@ -35,10 +35,23 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .nav__logo {
   height: 1.25rem;
   width: 7.5rem;
   margin: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    height: 1.25rem;
+    width: 7.5rem;
+    margin: 2.25rem;
+  }
 }
 .nav__list {
   display: flex;
@@ -46,20 +59,47 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
+  text-decoration: none;
+  list-style-type: none;
 }
-.nav__item, .nav__item--active, .nav__item:hover, .nav__item--active:hover {
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+  }
+}
+.nav__item, .nav__link--active {
   font-weight: 400;
   list-style-type: none;
   width: 50%;
   text-align: center;
   padding: 0.7rem;
+  text-decoration: none;
+  list-style-type: none;
 }
-.nav__item--active, .nav__item:hover, .nav__item--active:hover {
-  border-bottom: 0.2rem solid #FFFFFF;
+@media screen and (min-width: 768px) {
+  .nav__item, .nav__link--active {
+    margin: 2.25rem;
+    padding: 0;
+  }
 }
 .nav__link {
-  color: #FFFFFF;
+  color: #E1E1E1;
   text-decoration: none;
+  list-style-type: none;
+}
+.nav__link--active {
+  border-bottom: 0.1rem solid #FFFFFF;
+  padding-bottom: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__link--active {
+    border-bottom: 0.1rem solid #FFFFFF;
+    padding-bottom: 2.25rem;
+    font-weight: 600;
+  }
 }
 
 .hero {
@@ -70,11 +110,30 @@ body {
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/Images/hero-bio.jpg);
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+  }
+}
 .hero__title {
   color: #FFFFFF;
   font-weight: 600;
   padding-left: 1rem;
   z-index: 999;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    color: #FFFFFF;
+    font-size: 3.25rem;
+    padding-left: 1rem;
+    font-weight: 700;
+    z-index: 999;
+  }
 }
 .hero__overlay {
   position: absolute;
@@ -86,27 +145,93 @@ body {
   background-position: center;
   opacity: 0.5;
 }
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 30rem;
+    background-color: #323232;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+  }
+}
 
 .bio {
   margin: 1rem;
 }
-.bio__box {
-  margin: 1rem;
-}
 .bio__title {
+  color: #323232;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .bio__title {
+    color: #323232;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-top: 3rem;
+    font-weight: 600;
+  }
+}
 .bio__image {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .bio__image {
+    width: 100%;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
 }
 .bio__quote {
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .bio__quote {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+.bio__subtitle {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .bio__subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+.bio__story {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .bio__story {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-bottom: 1rem;
+    -moz-columns: 2;
+         columns: 2;
+  }
 }
 
 .gallery {
@@ -120,9 +245,35 @@ body {
   font-weight: 600;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-bottom: 1rem;
+  }
+}
+.gallery__box {
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .gallery__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .gallery__item {
   width: 100%;
   padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: 33%;
+    padding: 0.8rem;
+  }
 }
 
 .footer {

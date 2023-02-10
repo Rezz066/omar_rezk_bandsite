@@ -26,10 +26,8 @@ body{
     align-items: center;
 
     @include tablet {
-        background-color: purple;
         display: flex;
-        justify-content: row;
-        align-items: flex-start;
+        flex-direction: row;
     }
 
     &__logo{
@@ -38,9 +36,9 @@ body{
         margin: 1rem;
 
         @include tablet {
-            display: flex;
-            justify-content: row;
-            align-items: flex-start;
+            height: 1.25rem;
+            width: 7.5rem;
+            margin: 2.25rem; 
         }
 
     }
@@ -50,11 +48,14 @@ body{
         margin: 0;
         padding: 0;
         width: 100vw;
+        text-decoration: none;
+        list-style-type: none;
 
         @include tablet {
             display: flex;
-            justify-content: row;
-            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+            width: 30vw;
         }
 
     }
@@ -65,33 +66,38 @@ body{
         width: 50%;
         text-align: center;
         padding: .7rem;
+        text-decoration: none;
+        list-style-type: none;
+
+        @include tablet {
+            margin: 2.25rem;
+            padding: 0;
+        }
+
+            
+        }
+        
+       &__link{
+        color: $secondary-color-mercury;
+        text-decoration: none;
+        list-style-type: none;
+
 
         &--active{
             @extend .nav__item;
-            border-bottom: .2rem solid $primary-color-white;
+            border-bottom: .1rem solid $primary-color-white;
+            padding-bottom: .7rem;
+            @include tablet{
+                @extend .nav__item;
+            border-bottom: .1rem solid $primary-color-white;
+            padding-bottom: 2.25rem;
+            font-weight: 600;
+            }
+            
+
         }
 
-        &:hover{
-            @extend .nav__item--active;
-        }
-
-        @include tablet {
-            display: flex;
-            justify-content: row;
-            align-items: flex-start;
-        }
-        
-    }
-
-    &__link{
-        color: $primary-color-white;
-        text-decoration: none;
-    }
-
-    @include tablet {
-        display: flex;
-        justify-content: row;
-        align-items: flex-start;
-    }
-
+    } 
 }
+
+    
