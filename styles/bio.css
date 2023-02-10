@@ -96,7 +96,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .nav__link--active {
-    border-bottom: 0.1rem solid #FFFFFF;
+    border-bottom: 0.2rem solid #FFFFFF;
     padding-bottom: 2.25rem;
     font-weight: 600;
   }
@@ -112,6 +112,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2rem;
+  }
+}
 .footer__title {
   font-size: 2rem;
   line-height: 2rem;
@@ -122,6 +130,30 @@ body {
   display: flex;
   gap: 2rem;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer__icons {
   width: 1.5rem;
@@ -150,6 +182,13 @@ body {
   line-height: 1.125rem;
   font-weight: 400;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__logoimage {
+    position: relative;
+    top: -19.3rem;
+    left: 47.5rem;
+  }
 }
 .footer__logo {
   width: 7.5rem;
@@ -189,8 +228,8 @@ body {
   .hero__title {
     color: #FFFFFF;
     font-size: 3.25rem;
-    padding-left: 1rem;
-    font-weight: 700;
+    padding-left: 2rem;
+    font-weight: 600;
     z-index: 999;
   }
 }
