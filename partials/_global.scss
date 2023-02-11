@@ -210,7 +210,7 @@ body{
         @include tablet {
         position: relative;
         top: -19.3rem;
-        left: 47.5rem;
+        left: 37.5rem;
         }
     }
 
@@ -219,8 +219,9 @@ body{
         height: 1.25rem;
 
         @include tablet {
-
-        }
+            width: 7.5rem;
+            height: 1.25rem;
+            }
 
     }
 
