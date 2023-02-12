@@ -19,6 +19,15 @@
         background-size: cover;
         background-position: center;
 
+        @include desktop {
+            display: flex;
+            align-items: center;
+            background-image: url(../assets/Images/hero-bio.jpg);
+            height: 50rem;
+            background-size: cover;
+            background-position: center;
+        }
+
     }
     &__title{
         color: $primary-color-white;
@@ -30,6 +39,14 @@
             color: $primary-color-white;
             font-size: 3.25rem;
             padding-left: 2rem;
+            font-weight: 600;
+            z-index: 999;
+        }
+
+        @include tablet {
+            color: $primary-color-white;
+            font-size: 3.25rem;
+            padding-left: 5rem;
             font-weight: 600;
             z-index: 999;
         }
@@ -54,10 +71,25 @@
             background-position: center;
             opacity: .5;
         }
+
+        @include tablet {
+            position: absolute;
+            padding: 0;
+            width: 100%;
+            height: 50rem;
+            background-color: $primary-color-black;
+            background-size: cover;
+            background-position: center;
+            opacity: .5;
+        }
     }
 }
 .bio{
     margin: 1rem;
+
+    @include desktop{
+        margin: 5rem;
+    }
 
     &__title{
         color: $primary-color-black;
@@ -74,11 +106,25 @@
             padding-top: 3rem;
             font-weight: 600;
         }
+
+        @include desktop {
+            color: $primary-color-black;
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            padding-top: 3rem;
+            font-weight: 600;
+        }
     }
     &__image{
         width: 100%;
 
         @include tablet {
+            width: 100%;
+            padding-left: 2.25rem;
+            padding-right: 2.25rem;           
+        }
+
+        @include desktop {
             width: 100%;
             padding-left: 2.25rem;
             padding-right: 2.25rem;           
@@ -90,6 +136,14 @@
         font-weight: 600;
 
         @include tablet {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            font-weight: 600;
+            padding-left: 2.25rem;
+            padding-right: 2.25rem; 
+        }
+
+        @include desktop {
             font-size: 2.25rem;
             line-height: 2.75rem;
             font-weight: 600;
@@ -109,6 +163,14 @@
             padding-left: 2.25rem;
             padding-right: 2.25rem; 
         }
+
+        @include desktop {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 600;
+            padding-left: 2.25rem;
+            padding-right: 2.25rem; 
+        }
     }
     &__story{
         font-size: .875rem;
@@ -116,6 +178,14 @@
         font-weight: 400;
 
         @include tablet {
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            font-weight: 400;
+            padding: 0 2.25rem 1rem 2.25rem;
+            columns: 2;
+        }
+
+        @include desktop {
             font-size: 0.875rem;
             line-height: 1.375rem;
             font-weight: 400;
@@ -142,6 +212,12 @@
             font-weight: 600;
             padding: 3rem 2.25rem 1rem 2.25rem;
         }
+
+        @include tablet {
+            font-size: 2.25rem;
+            font-weight: 600;
+            padding: 3rem 2.25rem 1rem 2.25rem;
+        }
     }
 
     &__box{
@@ -151,6 +227,13 @@
             display: flex;
             flex-wrap: wrap;
         }
+
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2.25rem 2.25rem 2.25rem 5rem;
+
+        }
     }
 
     &__item{
@@ -158,6 +241,13 @@
         padding: 1rem;
 
         @include tablet {
+            width: 33%;
+            padding: 0 2.25rem 1rem 2.25rem;
+            padding: .8rem;
+
+        }
+
+        @include desktop {
             width: 33%;
             padding: 0 2.25rem 1rem 2.25rem;
             padding: .8rem;

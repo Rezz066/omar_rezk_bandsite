@@ -28,6 +28,14 @@ body{
     @include tablet {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        margin-right: 5rem;
     }
 
     &__logo{
@@ -39,6 +47,12 @@ body{
             height: 1.25rem;
             width: 7.5rem;
             margin: 2.25rem; 
+        }
+
+        @include desktop {
+            height: 1.25rem;
+            width: 7.5rem;
+            margin: 2.25rem 2.25rem 2.25rem 5rem;
         }
 
     }
@@ -59,6 +73,13 @@ body{
             width: 30vw;
         }
 
+        @include desktop {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 30vw;
+        }
+
     }
 
     &__item{
@@ -72,32 +93,48 @@ body{
 
 
         @include tablet {
-            margin: 2.25rem;
-            padding: 0;
+            margin-right: 2.25rem;
+            padding: 2.25rem 0 2.25rem 0;
+            display: flex;
 
             }
- 
+        
+        @include desktop {
+            margin-right: 2.25rem;
+            padding: 2.25rem 0 2.25rem 0;
+            display: flex;
+    
+            }
+
+        &--active{
+
+            border-bottom: .2rem solid $primary-color-white;
+            padding-bottom: .7rem;
+            font-weight: 600;
+    
+            @include tablet{
+
+            border-bottom: .2rem solid $primary-color-white;
+            padding-bottom: 2.25rem;
+            font-weight: 600;
+            }
+    
+            @include desktop{
+
+            border-bottom: .2rem solid $primary-color-white;
+            padding-bottom: 2.25rem;
+            font-weight: 600;
+            }
+    
         }
+ 
+    }
         
        &__link{
         color: $secondary-color-mercury;
         text-decoration: none;
         list-style-type: none;
 
-        &--active{
-            @extend .nav__item;
-            border-bottom: .2rem solid $primary-color-white;
-            padding-bottom: .7rem;
-            font-weight: 600;
-
-            @include tablet{
-                @extend .nav__item;
-            border-bottom: .2rem solid $primary-color-white;
-            padding-bottom: 2.25rem;
-            font-weight: 600;
-            }
-
-        }
 
     } 
 }
@@ -112,12 +149,28 @@ body{
         position: relative;
     }
 
+    @include desktop {
+        position: relative;
+        padding: 2.25rem 2.25rem 2.25rem 5rem;
+
+        
+    }
+
 
     &__social{
         display: flex;
         flex-direction: column;
 
         @include tablet {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 2rem;
+            
+        }
+
+        @include desktop {
             display: flex;
             flex-direction: row;
             align-items: baseline;
@@ -136,6 +189,10 @@ body{
         @include tablet {
             display: none;
         }
+
+        @include desktop {
+            display: none;
+        }
     }
 
     &__box{
@@ -144,6 +201,13 @@ body{
         padding-bottom: 1rem;
 
         @include tablet {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 2rem;
+        }
+
+        @include desktop {
             display: flex;
             flex-direction: row;
             align-items: baseline;
@@ -161,17 +225,31 @@ body{
             line-height: 2.75rem;
             font-weight: 600;
         }
+
+        @include desktop {
+            display: flex;
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            font-weight: 600;
+        }
     }
 
     &__icons{
         width: 1.5rem;
         height: 1.5rem;
+
     }
 
     &__bandlogo{
         display: none;
 
         @include tablet {
+            display: flex;
+            padding-right: 3rem;
+
+        }
+
+        @include desktop {
             display: flex;
             padding-right: 3rem;
 
@@ -184,11 +262,21 @@ body{
             display: flex;
             gap: 1.8rem;
         }
+
+        @include desktop {
+            display: flex;
+            gap: 1.8rem;
+        }
     }
 
     &__management{
         
         @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include desktop {
             display: flex;
             flex-direction: column;
         }
@@ -200,11 +288,21 @@ body{
             display: flex;
             flex-direction: column;
         }
+
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__entertainment{
         
         @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include desktop {
             display: flex;
             flex-direction: column;
         }
@@ -243,11 +341,10 @@ body{
 
         @include tablet {
             display: none;
-            // position: sticky;
-            // bottom: 21.7rem;
-            // left: 49.5rem;
-            // width: 7.5rem;
-            // height: 1.25rem;
+        }
+
+        @include desktop {
+            display: none;
         }
     }
 
@@ -259,6 +356,12 @@ body{
             width: 7.5rem;
             height: 1.25rem;
             }
+
+        @include desktop {
+                width: 7.5rem;
+                height: 1.25rem;
+                }
+
 
     }
 
