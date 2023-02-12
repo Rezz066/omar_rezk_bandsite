@@ -30,6 +30,7 @@ body{
         flex-direction: row;
         align-items: center;
         gap: 1rem;
+        padding-left: 1rem;
     }
 
     @include desktop {
@@ -70,14 +71,16 @@ body{
             display: flex;
             margin: 0;
             padding: 0;
-            width: 30vw;
+            width: 19vw;
+            gap: 2rem;
         }
 
         @include desktop {
             display: flex;
             margin: 0;
             padding: 0;
-            width: 30vw;
+            width: 21vw;
+            gap: 4rem;
         }
 
     }
@@ -90,19 +93,25 @@ body{
         padding: .8rem;
         text-decoration: none;
         list-style-type: none;
+        color: $primary-color-white;
 
 
         @include tablet {
-            margin-right: 2.25rem;
             padding: 2.25rem 0 2.25rem 0;
             display: flex;
+            color: $primary-color-white;
+            justify-content: space-evenly;
+
+
 
             }
         
         @include desktop {
-            margin-right: 2.25rem;
             padding: 2.25rem 0 2.25rem 0;
             display: flex;
+            color: $primary-color-white;
+            justify-content: space-evenly;
+
     
             }
 
@@ -111,12 +120,15 @@ body{
             border-bottom: .2rem solid $primary-color-white;
             padding-bottom: .7rem;
             font-weight: 600;
+            color: $primary-color-white;
     
             @include tablet{
 
             border-bottom: .2rem solid $primary-color-white;
             padding-bottom: 2.25rem;
             font-weight: 600;
+            color: $primary-color-white;
+
             }
     
             @include desktop{
@@ -124,6 +136,8 @@ body{
             border-bottom: .2rem solid $primary-color-white;
             padding-bottom: 2.25rem;
             font-weight: 600;
+            color: $primary-color-white;
+
             }
     
         }
@@ -131,9 +145,21 @@ body{
     }
         
        &__link{
-        color: $secondary-color-mercury;
+        color: $primary-color-white;
         text-decoration: none;
         list-style-type: none;
+
+        @include tablet {
+            color: $primary-color-white;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        @include desktop {
+            color: $primary-color-white;
+            text-decoration: none;
+            list-style-type: none;
+        }
 
 
     } 
@@ -360,7 +386,8 @@ body{
         @include desktop {
                 width: 7.5rem;
                 height: 1.25rem;
-                }
+
+            }
 
 
     }

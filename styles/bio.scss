@@ -38,12 +38,12 @@
         @include tablet {
             color: $primary-color-white;
             font-size: 3.25rem;
-            padding-left: 2rem;
+            padding-left: 3rem;
             font-weight: 600;
             z-index: 999;
         }
 
-        @include tablet {
+        @include desktop {
             color: $primary-color-white;
             font-size: 3.25rem;
             padding-left: 5rem;
@@ -72,7 +72,7 @@
             opacity: .5;
         }
 
-        @include tablet {
+        @include desktop {
             position: absolute;
             padding: 0;
             width: 100%;
@@ -84,6 +84,7 @@
         }
     }
 }
+
 .bio{
     margin: 1rem;
 
@@ -96,8 +97,7 @@
         font-size: 1.5rem;
         line-height: 2rem;
         font-weight: 600;
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
+        padding: 1.5rem 0 1rem 0;
 
         @include tablet {
             color: $primary-color-black;
@@ -120,14 +120,12 @@
 
         @include tablet {
             width: 100%;
-            padding-left: 2.25rem;
-            padding-right: 2.25rem;           
+            padding: 0 2.25rem 0 2.25rem;           
         }
 
         @include desktop {
             width: 100%;
-            padding-left: 2.25rem;
-            padding-right: 2.25rem;           
+            padding: 0 2.25rem 0 2.25rem;           
         }
     }
     &__quote{
@@ -139,16 +137,14 @@
             font-size: 2.25rem;
             line-height: 2.75rem;
             font-weight: 600;
-            padding-left: 2.25rem;
-            padding-right: 2.25rem; 
+            padding: 0 2.25rem 0 2.25rem;
         }
 
         @include desktop {
             font-size: 2.25rem;
             line-height: 2.75rem;
             font-weight: 600;
-            padding-left: 2.25rem;
-            padding-right: 2.25rem; 
+            padding: 0 2.25rem 0 2.25rem; 
         }
     }
     &__subtitle{
@@ -160,16 +156,14 @@
             font-size: 1.5rem;
             line-height: 2rem;
             font-weight: 600;
-            padding-left: 2.25rem;
-            padding-right: 2.25rem; 
+            padding: 0 2.25rem 0 2.25rem; 
         }
 
         @include desktop {
             font-size: 1.5rem;
             line-height: 2rem;
             font-weight: 600;
-            padding-left: 2.25rem;
-            padding-right: 2.25rem; 
+            padding: 0 2.25rem 0 2.25rem; 
         }
     }
     &__story{
@@ -202,8 +196,7 @@
     &__title{
         font-size: 1.5rem;
         line-height: 2rem;
-        padding-top: 1.5rem;
-        padding-left: 1rem;
+        padding: 1.5rem 0 0 1rem;
         font-weight: 600;
         margin: 0;
 
@@ -213,7 +206,7 @@
             padding: 3rem 2.25rem 1rem 2.25rem;
         }
 
-        @include tablet {
+        @include desktop {
             font-size: 2.25rem;
             font-weight: 600;
             padding: 3rem 2.25rem 1rem 2.25rem;
