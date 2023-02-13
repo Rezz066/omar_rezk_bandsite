@@ -634,14 +634,12 @@ body {
 @media screen and (min-width: 768px) {
   .gallery__item {
     width: 33%;
-    padding: 0 2.25rem 1rem 2.25rem;
     padding: 0.8rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .gallery__item {
     width: 33%;
-    padding: 0 2.25rem 1rem 2.25rem;
     padding: 0.8rem;
   }
 }/*# sourceMappingURL=bio.css.map */
