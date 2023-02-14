@@ -448,13 +448,51 @@ body {
 }
 .banner__subtitle {
   color: #FFFFFF;
-  font-size: 3rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 2rem 2rem 0 2rem;
   z-index: 999;
+  font-weight: 600;
 }
 .banner__title {
   color: #FFFFFF;
-  font-size: 5rem;
-  padding: 1rem;
+  font-size: 2rem;
+  margin: 2rem 2rem 0 2rem;
   z-index: 999;
+  font-weight: 600;
+}
+
+.shows {
+  margin: 0;
+  padding: 0;
+}
+.shows__title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem 2rem 0 2rem;
+  margin: 0;
+}
+.shows__box {
+  padding: 0 2rem 0 2rem;
+}
+.shows__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #AFAFAF;
+}
+.shows__date {
+  font-weight: 600;
+}
+.shows__button {
+  text-align: center;
+  background-color: #323232;
+  border: 0;
+  border-radius: 0.5rem;
+  margin: 0 2rem 0 2rem;
+  padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+}
+.shows__button--link {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 2rem 0 2rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=shows.css.map */

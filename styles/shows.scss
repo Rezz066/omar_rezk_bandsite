@@ -68,19 +68,66 @@
 
     &__subtitle{
         color: $primary-color-white;
-        font-size: 3rem;
-        padding: 1rem;
+        font-size: 1.5rem;
+        margin: 2rem 2rem 0 2rem;
         z-index: 999;
+        font-weight: 600;
 
 
     }
 
     &__title{
         color: $primary-color-white;
-        font-size: 5rem;
-        padding: 1rem;
+        font-size: 2rem;
+        margin: 2rem 2rem 0 2rem;
         z-index: 999;
+        font-weight: 600;
 
+
+    }
+}
+
+.shows{
+    margin: 0;
+    padding: 0;
+
+    &__title{
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 2rem 2rem 0 2rem;
+        margin: 0;
+    }
+
+
+    &__box{
+        padding: 0 2rem 0 2rem;
+    }
+
+    &__subtitle{
+        font-size: 1rem;
+        font-weight: 600;
+        color: $primary-color-silver;
+    }
+
+    &__date {
+        font-weight: 600;
+    }
+
+    &__button{
+        text-align: center;
+        background-color: $primary-color-black;
+        border: 0;
+        border-radius: .5rem;
+        margin: 0 2rem 0 2rem;
+        padding: .625rem 2.5rem .625rem 2.5rem; 
+
+        &--link{
+            text-decoration: none;
+            color: $primary-color-white;
+            padding: 0 2rem 0 2rem;
+            font-size: 1.5rem;
+
+        }
 
     }
 }
