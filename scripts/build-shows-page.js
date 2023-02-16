@@ -98,7 +98,7 @@ const section = document.querySelector('.shows')
 
         //create Shows Button Link inside parent (Shows Button)
         const showsButtonLinkEl = document.createElement('a')
-        showsButtonLinkEl.classList.add('Shows__button--link')
+        showsButtonLinkEl.classList.add('shows__button--link')
         showsButtonLinkEl.innerText = "GET TICKET"
         showsButtonEl.appendChild(showsButtonLinkEl)
     }
