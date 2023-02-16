@@ -69,7 +69,8 @@
     &__subtitle{
         color: $primary-color-white;
         font-size: 1.5rem;
-        margin: 2rem 2rem 0 2rem;
+        padding: 2rem 0 0 1rem;
+        margin: 0;
         z-index: 999;
         font-weight: 600;
 
@@ -78,10 +79,19 @@
 
     &__title{
         color: $primary-color-white;
-        font-size: 2rem;
-        margin: 2rem 2rem 0 2rem;
+        font-size: 3rem;
+        padding: 2rem 0 0 1rem;
+        margin: 0;
         z-index: 999;
         font-weight: 600;
+
+
+    }
+
+    &__music{
+        display: none;
+        margin-left: 1rem;
+        margin-right: 3rem;
 
 
     }
@@ -98,13 +108,17 @@
         margin: 0;
     }
 
+    &__event{
+        padding-bottom: 1rem;
+    }
+
 
     &__box{
         padding: 0 2rem 0 2rem;
     }
 
     &__subtitle{
-        font-size: 1rem;
+        font-size: .7rem;
         font-weight: 600;
         color: $primary-color-silver;
     }

@@ -449,16 +449,23 @@ body {
 .banner__subtitle {
   color: #FFFFFF;
   font-size: 1.5rem;
-  margin: 2rem 2rem 0 2rem;
+  padding: 2rem 0 0 1rem;
+  margin: 0;
   z-index: 999;
   font-weight: 600;
 }
 .banner__title {
   color: #FFFFFF;
-  font-size: 2rem;
-  margin: 2rem 2rem 0 2rem;
+  font-size: 3rem;
+  padding: 2rem 0 0 1rem;
+  margin: 0;
   z-index: 999;
   font-weight: 600;
+}
+.banner__music {
+  display: none;
+  margin-left: 1rem;
+  margin-right: 3rem;
 }
 
 .shows {
@@ -471,11 +478,14 @@ body {
   padding: 2rem 2rem 0 2rem;
   margin: 0;
 }
+.shows__event {
+  padding-bottom: 1rem;
+}
 .shows__box {
   padding: 0 2rem 0 2rem;
 }
 .shows__subtitle {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #AFAFAF;
 }
