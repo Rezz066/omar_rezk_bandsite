@@ -80,16 +80,20 @@
 
             <section class="form">
                 <h1 class="form__title">Join the Conversation</h1>
-                <img class="form__image" src="./assets/Images/Mohan-muruge.jpg" alt="mohan-muruge">
-                <div class="form__container">
-                    <div class="form__box">
-                        <label class="form__label" for="fullName">NAME</label>
-                        <input class="input__text" type="text" name="fullName" placeholder="NAME"/>
+                    <div class="form__container">
+                        <img class="form__image" src="./assets/Images/Mohan-muruge.jpg" alt="mohan-muruge">
+                        <div class="form__box">
+                        <div class="form__content">
+                            <label class="form__label" for="fullName">NAME</label>
+                            <input class="form__text" type="text" name="fullName" placeholder="Enter your name"/>
+                        </div>
+                        <div class="form__content">
+                            <label class="form__label" for="Comments">COMMENT</label>
+                            <textarea class="form__message"name="message" placeholder="Add a new comment"></textarea>
+                        </div>
+                        <button class="form__button">COMMENT</button>
                     </div>
-                    <div class="form__box">
-                        <textarea class="form__message"name="message"></textarea>
                     </div>
-                </div>
             </section>
     </main>
 

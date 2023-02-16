@@ -644,6 +644,10 @@ body {
   }
 }
 
+.form {
+  box-sizing: border-box;
+  font-family: "AvenirNextLTPro";
+}
 .form__title {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -651,8 +655,45 @@ body {
   font-weight: 600;
   margin: 0;
 }
+.form__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 1rem;
+}
 .form__image {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
+  margin: 1rem 0 0 1rem;
+}
+.form__label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #AFAFAF;
+}
+.form__text {
+  height: 2.25rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  width: 77vw;
+  margin-bottom: 1.5rem;
+}
+.form__message {
+  height: 8rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  width: 77vw;
+  margin-bottom: 1.5rem;
+}
+.form__button {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #323232;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  width: 77vw;
 }/*# sourceMappingURL=bio.css.map */
