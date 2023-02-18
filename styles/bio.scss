@@ -3,7 +3,7 @@
 @use './partials/mixins' as *;
 @use './partials/typography' as *;
 
-.hero{
+.hero {
     display: flex;
     align-items: center;
     background-image: url(../assets/Images/hero-bio.jpg);
@@ -12,46 +12,40 @@
     background-position: center;
 
     @include tablet {
-        display: flex;
-        align-items: center;
-        background-image: url(../assets/Images/hero-bio.jpg);
         height: 30rem;
-        background-size: cover;
-        background-position: center;
+
 
         @include desktop {
-            display: flex;
-            align-items: center;
-            background-image: url(../assets/Images/hero-bio.jpg);
             height: 50rem;
-            background-size: cover;
-            background-position: center;
+
         }
 
     }
-    &__title{
+
+    &__title {
         color: $primary-color-white;
         font-weight: 600;
         padding-left: 1rem;
         z-index: 999;
-    
+
         @include tablet {
-            color: $primary-color-white;
+            // color: $primary-color-white;
             font-size: 3.25rem;
             padding-left: 3rem;
-            font-weight: 600;
-            z-index: 999;
+            // font-weight: 600;
+            // z-index: 999;
         }
 
         @include desktop {
-            color: $primary-color-white;
+            // color: $primary-color-white;
             font-size: 3.25rem;
             padding-left: 5rem;
-            font-weight: 600;
-            z-index: 999;
+            // font-weight: 600;
+            // z-index: 999;
         }
     }
-    &__overlay{
+
+    &__overlay {
         position: absolute;
         padding: 0;
         width: 100%;
@@ -62,37 +56,37 @@
         opacity: .5;
 
         @include tablet {
-            position: absolute;
-            padding: 0;
-            width: 100%;
+            // position: absolute;
+            // padding: 0;
+            // width: 100%;
             height: 30rem;
-            background-color: $primary-color-black;
-            background-size: cover;
-            background-position: center;
-            opacity: .5;
+            // background-color: $primary-color-black;
+            // background-size: cover;
+            // background-position: center;
+            // opacity: .5;
         }
 
         @include desktop {
-            position: absolute;
-            padding: 0;
-            width: 100%;
+            // position: absolute;
+            // padding: 0;
+            // width: 100%;
             height: 50rem;
-            background-color: $primary-color-black;
-            background-size: cover;
-            background-position: center;
-            opacity: .5;
+            // background-color: $primary-color-black;
+            // background-size: cover;
+            // background-position: center;
+            // opacity: .5;
         }
     }
 }
 
-.bio{
+.bio {
     margin: 1rem;
 
-    @include desktop{
+    @include desktop {
         margin: 5rem;
     }
 
-    &__title{
+    &__title {
         color: $primary-color-black;
         font-size: 1.5rem;
         line-height: 2rem;
@@ -100,35 +94,37 @@
         padding: 1.5rem 0 1rem 0;
 
         @include tablet {
-            color: $primary-color-black;
+            // color: $primary-color-black;
             font-size: 2.25rem;
             line-height: 2.75rem;
             padding-top: 3rem;
-            font-weight: 600;
+            // font-weight: 600;
         }
 
         @include desktop {
-            color: $primary-color-black;
+            // color: $primary-color-black;
             font-size: 2.25rem;
             line-height: 2.75rem;
             padding-top: 3rem;
-            font-weight: 600;
+            // font-weight: 600;
         }
     }
-    &__image{
+
+    &__image {
         width: 100%;
 
         @include tablet {
-            width: 100%;
-            padding: 0 2.25rem 0 2.25rem;           
+            // width: 100%;
+            padding: 0 2.25rem 0 2.25rem;
         }
 
-        @include desktop {
-            width: 100%;
-            padding: 0 2.25rem 0 2.25rem;           
-        }
+        // @include desktop {
+        //     width: 100%;
+        //     padding: 0 2.25rem 0 2.25rem;           
+        // }
     }
-    &__quote{
+
+    &__quote {
         font-size: 0.875rem;
         line-height: 1.375rem;
         font-weight: 600;
@@ -136,18 +132,19 @@
         @include tablet {
             font-size: 2.25rem;
             line-height: 2.75rem;
-            font-weight: 600;
+            // font-weight: 600;
             padding: 0 2.25rem 0 2.25rem;
         }
 
         @include desktop {
             font-size: 2.25rem;
             line-height: 2.75rem;
-            font-weight: 600;
-            padding: 0 2.25rem 0 2.25rem; 
+            // font-weight: 600;
+            // padding: 0 2.25rem 0 2.25rem; 
         }
     }
-    &__subtitle{
+
+    &__subtitle {
         font-size: 0.875rem;
         line-height: 1.375rem;
         font-weight: 600;
@@ -155,18 +152,19 @@
         @include tablet {
             font-size: 1.5rem;
             line-height: 2rem;
-            font-weight: 600;
-            padding: 0 2.25rem 0 2.25rem; 
+            // font-weight: 600;
+            padding: 0 2.25rem 0 2.25rem;
         }
 
         @include desktop {
             font-size: 1.5rem;
             line-height: 2rem;
-            font-weight: 600;
-            padding: 0 2.25rem 0 2.25rem; 
+            // font-weight: 600;
+            // padding: 0 2.25rem 0 2.25rem; 
         }
     }
-    &__story{
+
+    &__story {
         font-size: .875rem;
         line-height: 1.25rem;
         font-weight: 400;
@@ -174,7 +172,7 @@
         @include tablet {
             font-size: 0.875rem;
             line-height: 1.375rem;
-            font-weight: 400;
+            // font-weight: 400;
             padding: 0 2.25rem 1rem 2.25rem;
             columns: 2;
         }
@@ -182,18 +180,18 @@
         @include desktop {
             font-size: 0.875rem;
             line-height: 1.375rem;
-            font-weight: 400;
-            padding: 0 2.25rem 1rem 2.25rem;
-            columns: 2;
+            // font-weight: 400;
+            // padding: 0 2.25rem 1rem 2.25rem;
+            // columns: 2;
 
         }
     }
 }
 
-.gallery{
+.gallery {
     background-color: $secondary-color-alabaster;
 
-    &__title{
+    &__title {
         font-size: 1.5rem;
         line-height: 2rem;
         padding: 1.5rem 0 0 1rem;
@@ -202,18 +200,18 @@
 
         @include tablet {
             font-size: 2.25rem;
-            font-weight: 600;
+            // font-weight: 600;
             padding: 3rem 2.25rem 1rem 2.25rem;
         }
 
-        @include desktop {
-            font-size: 2.25rem;
-            font-weight: 600;
-            padding: 3rem 2.25rem 1rem 2.25rem;
-        }
+        // @include desktop {
+        //     font-size: 2.25rem;
+        //     font-weight: 600;
+        //     padding: 3rem 2.25rem 1rem 2.25rem;
+        // }
     }
 
-    &__box{
+    &__box {
         margin: 0;
 
         @include tablet {
@@ -222,16 +220,17 @@
         }
 
         @include desktop {
-            display: flex;
-            flex-wrap: wrap;
+            // display: flex;
+            // flex-wrap: wrap;
             padding: 2.25rem 2.25rem 2.25rem 5rem;
 
         }
     }
 
-    &__item{
+    &__item {
         width: 100%;
         padding: 1rem;
+        filter: grayscale(1);
 
         @include tablet {
             width: 33%;
@@ -239,59 +238,71 @@
 
         }
 
-        @include desktop {
-            width: 33%;
-            padding: .8rem;
+        // @include desktop {
+        //     width: 33%;
+        //     padding: .8rem;
 
+        // }
+
+        &--link:hover {
+            filter: grayscale(0);
         }
+
     }
+
 
 }
 
-.form{
+.form {
     box-sizing: border-box;
     font-family: 'AvenirNextLTPro';
 
-    &__title{
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding: 1.5rem 0 0 1rem;
+    &__title {
+        font-size: 2rem;
+        padding: 1.5rem 0 1rem 1rem;
         font-weight: 600;
         margin: 0;
     }
 
-    &__container{
+    &__container {
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
-        padding: 1rem;
+        padding: 1.5rem 0 1rem 1rem;
 
     }
 
-    &__image{
+    &__image {
         width: 2.25rem;
         height: 2.25rem;
         border-radius: 50%;
-        margin: 1rem 0 0 1rem;
-
+        object-fit: cover;
+        position: relative;
+        top: 1rem;
+        left: 0.7rem;
     }
 
-    &__label{
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
         display: block;
         font-size: 1rem;
         font-weight: 600;
         color: $primary-color-silver;
     }
 
-    &__text{
+    &__text {
         height: 2.25rem;
         padding: .75rem;
         border-radius: .25rem;
-        width: 77vw;
-        margin-bottom: 1.5rem;
+        width: 100%;
+        margin: .25rem 0 2.25rem 0;
     }
 
-    &__message{
+    &__message {
         height: 8rem;
         padding: .75rem;
         border-radius: .25rem;
@@ -299,15 +310,58 @@
         margin-bottom: 1.5rem;
     }
 
-    &__button{
+    &__button {
         font-size: 1rem;
-        padding: 1rem;
         background-color: $primary-color-black;
         border-radius: .25rem;
         border: none;
         outline: none;
-        // height: 2.5rem;
+        text-decoration: none;
+        height: 2.5rem;
         color: $primary-color-white;
-        width: 77vw;
+        width: 100%;
+
+        @include tablet{
+            width: 9.375rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: flex-end;
+        }
+
+        &--link:hover{
+            background-color: $secondary-color-darkblack;
+        
+        }
+
     }
+}
+
+.comments {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        padding: 0 0 1.5rem 1rem;
+        gap: 1rem;
+
+    }
+
+    &__avatar {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        float: left;
+        position: relative;
+        top: 0.5rem;
+        left: 0.5rem;
+        background-color: $secondary-color-mercury;
+    }
+
+    &__box{
+        margin: 0 1.5rem 1rem 3.5rem;;
+        border-bottom: 1px solid $secondary-color-mercury;
+    }
+
 }

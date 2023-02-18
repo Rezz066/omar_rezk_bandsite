@@ -26,16 +26,16 @@ body{
     align-items: center;
 
     @include tablet {
-        display: flex;
+        // display: flex;
         flex-direction: row;
-        align-items: center;
+        // align-items: center;
         gap: 1rem;
         padding-left: 1rem;
     }
 
     @include desktop {
-        display: flex;
-        flex-direction: row;
+        // display: flex;
+        // flex-direction: row;
         margin-right: 5rem;
     }
 
@@ -45,14 +45,14 @@ body{
         margin: 1rem;
 
         @include tablet {
-            height: 1.25rem;
-            width: 7.5rem;
+            // height: 1.25rem;
+            // width: 7.5rem;
             margin: 2.25rem; 
         }
 
         @include desktop {
-            height: 1.25rem;
-            width: 7.5rem;
+            // height: 1.25rem;
+            // width: 7.5rem;
             margin: 2.25rem 2.25rem 2.25rem 5rem;
         }
 
@@ -68,17 +68,17 @@ body{
         list-style-type: none;
 
         @include tablet {
-            display: flex;
-            margin: 0;
-            padding: 0;
+            // display: flex;
+            // margin: 0;
+            // padding: 0;
             width: 19vw;
             gap: 2rem;
         }
 
         @include desktop {
-            display: flex;
-            margin: 0;
-            padding: 0;
+            // display: flex;
+            // margin: 0;
+            // padding: 0;
             width: 21vw;
             gap: 4rem;
         }
@@ -99,19 +99,18 @@ body{
         @include tablet {
             padding: 2.25rem 0 2.25rem 0;
             display: flex;
-            color: $primary-color-white;
+            // color: $primary-color-white;
             justify-content: space-evenly;
 
             }
         
-        @include desktop {
-            padding: 2.25rem 0 2.25rem 0;
-            display: flex;
-            color: $primary-color-white;
-            justify-content: space-evenly;
-
+        // @include desktop {
+        //     padding: 2.25rem 0 2.25rem 0;
+        //     display: flex;
+        //     color: $primary-color-white;
+        //     justify-content: space-evenly;
     
-            }
+        //     }
 
         &--active{
 
@@ -122,19 +121,19 @@ body{
     
             @include tablet{
 
-            border-bottom: .2rem solid $primary-color-white;
+            // border-bottom: .2rem solid $primary-color-white;
             padding-bottom: 1.25rem;
-            font-weight: 600;
-            color: $primary-color-white;
+            // font-weight: 600;
+            // color: $primary-color-white;
 
             }
     
             @include desktop{
 
-            border-bottom: .2rem solid $primary-color-white;
+            // border-bottom: .2rem solid $primary-color-white;
             padding-bottom: 2.25rem;
-            font-weight: 600;
-            color: $primary-color-white;
+            // font-weight: 600;
+            // color: $primary-color-white;
 
             }
     
@@ -147,17 +146,17 @@ body{
         text-decoration: none;
         list-style-type: none;
 
-        @include tablet {
-            color: $primary-color-white;
-            text-decoration: none;
-            list-style-type: none;
-        }
+        // @include tablet {
+        //     color: $primary-color-white;
+        //     text-decoration: none;
+        //     list-style-type: none;
+        // }
 
-        @include desktop {
-            color: $primary-color-white;
-            text-decoration: none;
-            list-style-type: none;
-        }
+        // @include desktop {
+        //     color: $primary-color-white;
+        //     text-decoration: none;
+        //     list-style-type: none;
+        // }
 
 
     } 
@@ -167,7 +166,7 @@ body{
     background-color: $primary-color-black;
     color: $primary-color-white;
     padding: 1rem;
-    font-family: 'AvenirNextLTPro';
+    // font-family: 'AvenirNextLTPro';
 
     @include tablet {
         position: relative;
@@ -186,7 +185,7 @@ body{
         flex-direction: column;
 
         @include tablet {
-            display: flex;
+            // display: flex;
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
@@ -194,14 +193,14 @@ body{
             
         }
 
-        @include desktop {
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            justify-content: space-between;
-            gap: 2rem;
+        // @include desktop {
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: baseline;
+        //     justify-content: space-between;
+        //     gap: 2rem;
             
-        }
+        // }
     }
 
     &__title{
@@ -214,9 +213,9 @@ body{
             display: none;
         }
 
-        @include desktop {
-            display: none;
-        }
+        // @include desktop {
+        //     display: none;
+        // }
     }
 
     &__box{
@@ -228,15 +227,15 @@ body{
             display: flex;
             flex-direction: row;
             align-items: baseline;
-            gap: 2rem;
+            // gap: 2rem;
         }
 
-        @include desktop {
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            gap: 2rem;
-        }
+        // @include desktop {
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: baseline;
+        //     gap: 2rem;
+        // }
 
     }
 
@@ -250,12 +249,12 @@ body{
             font-weight: 600;
         }
 
-        @include desktop {
-            display: flex;
-            font-size: 2.25rem;
-            line-height: 2.75rem;
-            font-weight: 600;
-        }
+        // @include desktop {
+        //     display: flex;
+        //     font-size: 2.25rem;
+        //     line-height: 2.75rem;
+        //     font-weight: 600;
+        // }
     }
 
     &__icons{
@@ -273,11 +272,11 @@ body{
 
         }
 
-        @include desktop {
-            display: flex;
-            padding-right: 3rem;
+        // @include desktop {
+        //     display: flex;
+        //     padding-right: 3rem;
 
-        }
+        // }
     }
 
     &__contact{
@@ -287,49 +286,23 @@ body{
             gap: 1.8rem;
         }
 
-        @include desktop {
-            display: flex;
-            gap: 1.8rem;
-        }
+        // @include desktop {
+        //     display: flex;
+        //     gap: 1.8rem;
+        // }
     }
 
-    &__management{
+    &__container{
         
         @include tablet {
             display: flex;
             flex-direction: column;
         }
 
-        @include desktop {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    &__artist{
-        
-        @include tablet {
-            display: flex;
-            flex-direction: column;
-        }
-
-        @include desktop {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    &__entertainment{
-        
-        @include tablet {
-            display: flex;
-            flex-direction: column;
-        }
-
-        @include desktop {
-            display: flex;
-            flex-direction: column;
-        }
+        // @include desktop {
+        //     display: flex;
+        //     flex-direction: column;
+        // }
     }
 
     &__name{
@@ -376,16 +349,16 @@ body{
         width: 7.5rem;
         height: 1.25rem;
 
-        @include tablet {
-            width: 7.5rem;
-            height: 1.25rem;
-            }
+        // @include tablet {
+        //     width: 7.5rem;
+        //     height: 1.25rem;
+        //     }
 
-        @include desktop {
-                width: 7.5rem;
-                height: 1.25rem;
+        // @include desktop {
+        //         width: 7.5rem;
+        //         height: 1.25rem;
 
-            }
+        //     }
 
 
     }

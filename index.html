@@ -66,35 +66,41 @@
             <section class="gallery">
                 <h2 class="gallery__title">Photo Gallery</h2>
                 <div class="gallery__box">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-1.jpg" alt="gallery_image_pink-smoke">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-2.jpg" alt="gallery_image_girl-glasses">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-3.jpg" alt="gallery_image_hands-pink">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-4.jpg" alt="gallery_image_girl-hand">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-5.jpg" alt="gallery_image_confetti">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-6.jpg" alt="gallery_image_artist">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-7.jpg" alt="gallery_image_confetti-far">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-8.jpg" alt="gallery_image_purple-djset">
-                    <img class="gallery__item" src="./assets/images/Photo-gallery-9.jpg" alt="gallery_image_confetti-hands">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-1.jpg" alt="gallery_image_pink-smoke">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-2.jpg" alt="gallery_image_girl-glasses">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-3.jpg" alt="gallery_image_hands-pink">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-4.jpg" alt="gallery_image_girl-hand">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-5.jpg" alt="gallery_image_confetti">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-6.jpg" alt="gallery_image_artist">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-7.jpg" alt="gallery_image_confetti-far">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-8.jpg" alt="gallery_image_purple-djset">
+                    <img class="gallery__item gallery__item--link" src="./assets/images/Photo-gallery-9.jpg" alt="gallery_image_confetti-hands">
                 </div>
             </section>
 
-            <section class="form">
-                <h1 class="form__title">Join the Conversation</h1>
+            <form class="form">
+                <h2 class="form__title">Join the Conversation</h2>
                     <div class="form__container">
-                        <img class="form__image" src="./assets/Images/Mohan-muruge.jpg" alt="mohan-muruge">
+                        <img class="form__image" src="./assets/images/Mohan-muruge.jpg" alt="mohan-muruge">
                         <div class="form__box">
                         <div class="form__content">
-                            <label class="form__label" for="fullName">NAME</label>
-                            <input class="form__text" type="text" name="fullName" placeholder="Enter your name"/>
+                            <label class="form__label" for="name">NAME</label>
+                            <input class="form__text" type="text" name="name" id="name" placeholder="Enter your name"/>
                         </div>
+
                         <div class="form__content">
-                            <label class="form__label" for="Comments">COMMENT</label>
-                            <textarea class="form__message"name="message" placeholder="Add a new comment"></textarea>
+                            <label class="form__label" for="comments">COMMENT</label>
+                            <textarea class="form__message" name="comments" id="comments" placeholder="Add a new comment"></textarea>
                         </div>
-                        <button class="form__button">COMMENT</button>
+                            <!-- <button class="form__button">COMMENT</button> -->
+                        <button class="form__button form__button--link">COMMENT</button>
+                        </div>
                     </div>
-                    </div>
-            </section>
+                </form>
+
+                <div class="comments">
+
+                </div>
     </main>
 
     <footer class="footer">
@@ -109,7 +115,7 @@
            <a href="./index.html"><img class="footer__bandlogo" src="./assets/logo/Logo-bandsite.svg" alt="band-logo"></a>
         </div>
             <div class="footer__contact">
-                <div class="footer__management">
+                <div class="footer__container">
                     <p class="footer__name">Cam Adams
                     <br>
                     The Bees Knees Management</p>
@@ -120,7 +126,7 @@
                    <p class="footer__email">info@thebeeseknees.com</p>
                 </div>
                 
-                <div class="footer__artist">
+                <div class="footer__container">
                    <p class="footer__name">Pearl Gregg
                     <br>
                     Limitless Artist Group</p>
@@ -131,7 +137,7 @@
                    <p class="footer__email">pearl.gregg@limitlessag.com</p> 
                 </div>
 
-                <div class="footer__entertainment">
+                <div class="footer__container">
                    <p class="footer__name">Carson Whyte
                    <br>ARCH Entertainment</p>
 
@@ -145,5 +151,6 @@
                 </div>
                     <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
     </footer>
+    <script src="./scripts/index-page.js"></script>
 </body>
 </html>
