@@ -29,14 +29,21 @@ formEl.addEventListener('submit', (event) => {
 
     const name = event.target.name.value;
     const comments = event.target.comments.value;
+    const dates = new Date();
+    const today = dates.getDate()  + '/' + (dates.getMonth() + 1) + '/' + dates.getFullYear()
+
+
+
+
 
 
     commentsList.unshift({
         name: name,
-        comment: comments
+        comment: comments, 
+        date: today
     });
 
-    console.log(commentsList)
+    // console.log(commentsList)
 
     renderComments()
 
@@ -57,18 +64,27 @@ function renderComments () {
         commentsContainerEl.classList.add('comments__container')
         commentEl.appendChild(commentsContainerEl)
 
-        const avatarEl = document.createElement('div')
-        avatarEl.classList.add('comments__avatar')
-        commentsContainerEl.appendChild(avatarEl)
-
         const commentsBoxEl = document.createElement('div')
         commentsBoxEl.classList.add('comments__box')
         commentsContainerEl.appendChild(commentsBoxEl)
 
+        const avatarEl = document.createElement('div')
+        avatarEl.classList.add('comments__avatar')
+        commentsBoxEl.appendChild(avatarEl)
+
+        const commentsHeaderEl = document.createElement('div')
+        commentsHeaderEl.classList.add('comments__header')
+        commentsBoxEl.appendChild(commentsHeaderEl)
+
         const nameEl = document.createElement('h3')
         nameEl.classList.add('comments__title')
         nameEl.innerText = commentItems.name
-        commentsBoxEl.appendChild(nameEl)
+        commentsHeaderEl.appendChild(nameEl)
+
+        const dateEl = document.createElement('p')
+        dateEl.classList.add('comments__date')
+        dateEl.innerText = commentItems.date
+        commentsHeaderEl.appendChild(dateEl)
 
         const textEl = document.createElement('p')
         textEl.classList.add('comments__text')
