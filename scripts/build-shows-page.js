@@ -36,6 +36,8 @@ const showsData = [
 
 const section = document.querySelector('.shows')
 
+
+
 // iterate through a for loop and log data with index [i]
     for(let i =0; i< showsData.length; i++) {
         const events = showsData[i]
@@ -44,6 +46,27 @@ const section = document.querySelector('.shows')
         const showsContainerEl = document.createElement('div')
         showsContainerEl.classList.add('shows__container')
         section.appendChild(showsContainerEl)
+
+        //create shows label inside parent (shows Container)
+        const showsLabelEl = document.createElement('div')
+        showsLabelEl.classList.add('shows__label')
+        showsContainerEl.appendChild(showsLabelEl)
+
+        //create shows title inside parent (shows Label)
+        const showsDateTitleEl = document.createElement('h4')
+        showsDateTitleEl.classList.add('shows__title')
+        showsDateTitleEl.innerText = "DATE";
+        showsLabelEl.appendChild(showsDateTitleEl)
+
+        const showsVenueTitleEl = document.createElement('h4')
+        showsVenueTitleEl.classList.add('shows__title')
+        showsVenueTitleEl.innerText = "VENUE";
+        showsLabelEl.appendChild(showsVenueTitleEl)
+
+        const showsLocationTitleEl = document.createElement('h4')
+        showsLocationTitleEl.classList.add('shows__title')
+        showsLocationTitleEl.innerText = "LOCATION";
+        showsLabelEl.appendChild(showsLocationTitleEl)
 
         //create Shows Events inside parent (Shows Container)
         const showsEventEl = document.createElement('div')
@@ -96,7 +119,6 @@ const section = document.querySelector('.shows')
         showsLocationEl.innerText = "LOCATION";
         showBoxesEl.appendChild(showsLocationEl)
 
-
         //create Shows Details inside parent (Shows Box)
         const showsLocationDetailsEl = document.createElement('p')
         showsLocationDetailsEl.classList.add('shows__details')
@@ -104,13 +126,13 @@ const section = document.querySelector('.shows')
         showBoxesEl.appendChild(showsLocationDetailsEl)
 
         //create Shows Button box inside parent (Show Box)
-        const showsButtonEl = document.createElement('div')
+        const showsButtonEl = document.createElement('a')
         showsButtonEl.classList.add('shows__button')
         showsEventEl.appendChild(showsButtonEl)
 
         //create Shows Button Link inside parent (Shows Button)
-        const showsButtonLinkEl = document.createElement('a')
+        const showsButtonLinkEl = document.createElement('p')
         showsButtonLinkEl.classList.add('shows__button--link')
-        showsButtonLinkEl.innerText = "BUY TICKET"
+        showsButtonLinkEl.innerText = "BUY TICKETS"
         showsButtonEl.appendChild(showsButtonLinkEl)
     }

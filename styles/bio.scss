@@ -256,6 +256,7 @@
 .form {
     box-sizing: border-box;
     font-family: 'AvenirNextLTPro';
+    margin: 0 2.25rem 0 2.25rem;
 
     &__title {
         font-size: 2rem;
@@ -342,19 +343,26 @@
 }
 
 .comments {
-    margin: 0;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
+    padding: 1.5rem 0 1rem 1rem;
+    margin: 0;
+
+    @include tablet{
+
+    }
 
     &__container {
-        padding: 0 0 1.5rem 1rem;
-        gap: 1rem;
+        width: 100%;
+        padding: 1.5rem 0 1rem 1rem;
 
     }
 
     &__box{
-        margin: 0 5rem 2rem 1rem;
+        width: 100%;
         border-bottom: 1px solid $secondary-color-mercury;
+
     }
 
     &__avatar {
@@ -372,6 +380,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
     }
 
     &__title{

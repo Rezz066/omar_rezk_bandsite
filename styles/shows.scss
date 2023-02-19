@@ -8,17 +8,17 @@
     display: flex;
     flex-direction: column;
     background-image: url(../assets/Images/hero-shows.jpg);
-    height: 25rem;
+    height: 30rem;
     background-size: cover;
     background-position: center;
-    justify-content: center;
 
     @include tablet {
-        height: 30rem;
+        height: 39rem;
     }
 
     @include desktop {
         height: 50rem;
+        flex-direction: row;
 
     }
 
@@ -26,14 +26,14 @@
         position: absolute;
         padding: 0;
         width: 100%;
-        height: 25rem;
+        height: 30rem;
         background-color: $primary-color-black;
         background-size: cover;
         background-position: center;
         opacity: .5;
 
         @include tablet {
-            height: 30rem;
+            height: 39rem;
 
         }
 
@@ -43,11 +43,21 @@
         }
     }
 
+    &__box{
+        z-index: 999
+        ;
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+    }
+
     &__subtitle{
         color: $primary-color-white;
+        max-width: 80%;
         font-size: 1.5rem;
-        padding: 2rem 0 0 1rem;
-        margin: 0;
+        margin: 1rem;
         z-index: 999;
         font-weight: 600;
 
@@ -56,19 +66,26 @@
 
         }
 
+        @include desktop{
+            margin-top: 12rem;
+            margin-left: 6rem;
+            font-size: 2rem;
+        }
+
     }
+
 
     &__title{
         color: $primary-color-white;
+        max-width: 80%;
         font-size: 3rem;
-        padding: 2rem 0 0 1rem;
-        margin: 0;
+        margin: .5rem;
         z-index: 999;
         font-weight: 700;
 
         @include tablet{
-            padding: 2rem 0 0 1rem;
             font-size: 4rem;
+            margin-left: 6rem;
             
         }
 
@@ -77,11 +94,19 @@
 
     &__music{
         z-index: 999;
+        margin: 1rem;
 
         @include tablet{
-            padding: 2rem 0 0 1rem;
+            width: 50%;
 
         }
+        
+        @include desktop{
+            margin-right: 3rem;
+            margin-top: 18rem;
+            width: 40%;
+        }
+
     }
 }
 
@@ -98,11 +123,31 @@
         margin: 1rem 2rem 0 2rem;
     }
 
-    &__title{
+    &__header{
         font-size: 2rem;
         font-weight: 600;
-        padding: 2rem;
-        margin: 0;
+    }
+
+    &__label{
+        display: none;
+
+        @include tablet{
+            display: flex;
+            justify-content: flex-start;
+            gap: 5rem;
+        }
+
+    }
+
+    &__title{
+        display: none;
+
+        @include tablet{
+            display: flex;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $primary-color-silver;
+        }
     }
 
     &__container{
@@ -150,7 +195,7 @@
         color: $primary-color-silver;
 
         @include tablet{
-            margin: .5rem;
+            display: none;
         }
     }
 

@@ -34,16 +34,11 @@ formEl.addEventListener('submit', (event) => {
 
 
 
-
-
-
     commentsList.unshift({
         name: name,
         comment: comments, 
         date: today
     });
-
-    // console.log(commentsList)
 
     renderComments()
 
@@ -51,14 +46,13 @@ formEl.addEventListener('submit', (event) => {
 
 })
 
+
 function renderComments () {
     
     commentEl.innerHTML = '';
 
-
     for (let i = 0; i < commentsList.length; i++){
         const commentItems = commentsList[i]
-
 
         const commentsContainerEl = document.createElement('div')
         commentsContainerEl.classList.add('comments__container')

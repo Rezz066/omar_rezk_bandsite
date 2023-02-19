@@ -18,6 +18,8 @@
 }
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -453,6 +455,7 @@ body {
 .form {
   box-sizing: border-box;
   font-family: "AvenirNextLTPro";
+  margin: 0 2.25rem 0 2.25rem;
 }
 .form__title {
   font-size: 2rem;
@@ -529,16 +532,18 @@ body {
 }
 
 .comments {
-  margin: 0;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
+  padding: 1.5rem 0 1rem 1rem;
+  margin: 0;
 }
 .comments__container {
-  padding: 0 0 1.5rem 1rem;
-  gap: 1rem;
+  width: 100%;
+  padding: 1.5rem 0 1rem 1rem;
 }
 .comments__box {
-  margin: 0 5rem 2rem 1rem;
+  width: 100%;
   border-bottom: 1px solid #E1E1E1;
 }
 .comments__avatar {
