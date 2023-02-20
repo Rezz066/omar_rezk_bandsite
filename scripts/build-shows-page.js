@@ -51,27 +51,6 @@ const section = document.querySelector('.shows')
         showsContainerEl.classList.add('shows__container')
         showsContentEl.appendChild(showsContainerEl)
 
-        //create shows label inside parent (shows Container)
-        const showsLabelEl = document.createElement('div')
-        showsLabelEl.classList.add('shows__label')
-        showsContainerEl.appendChild(showsLabelEl)
-
-        //create shows title inside parent (shows Label)
-        // const showsDateTitleEl = document.createElement('h4')
-        // showsDateTitleEl.classList.add('shows__title')
-        // showsDateTitleEl.innerText = "DATE";
-        // showsLabelEl.appendChild(showsDateTitleEl)
-
-        // const showsVenueTitleEl = document.createElement('h4')
-        // showsVenueTitleEl.classList.add('shows__title')
-        // showsVenueTitleEl.innerText = "VENUE";
-        // showsLabelEl.appendChild(showsVenueTitleEl)
-
-        // const showsLocationTitleEl = document.createElement('h4')
-        // showsLocationTitleEl.classList.add('shows__title')
-        // showsLocationTitleEl.innerText = "LOCATION";
-        // showsLabelEl.appendChild(showsLocationTitleEl)
-
         //create Shows Events inside parent (Shows Container)
         const showsEventEl = document.createElement('div')
         showsEventEl.classList.add('shows__event')
@@ -105,7 +84,6 @@ const section = document.querySelector('.shows')
         showsVenueEl.classList.add('shows__subtitle')
         showsVenueEl.innerText = "VENUE";
         showsBoxesEl.appendChild(showsVenueEl)
-
 
         //create Shows Details inside parent (Shows Box)
         const showsVenueDetailsEl = document.createElement('p')

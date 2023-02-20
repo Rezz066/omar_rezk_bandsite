@@ -56,25 +56,15 @@
         opacity: .5;
 
         @include tablet {
-            // position: absolute;
-            // padding: 0;
-            // width: 100%;
+
             height: 30rem;
-            // background-color: $primary-color-black;
-            // background-size: cover;
-            // background-position: center;
-            // opacity: .5;
+
         }
 
         @include desktop {
-            // position: absolute;
-            // padding: 0;
-            // width: 100%;
+
             height: 50rem;
-            // background-color: $primary-color-black;
-            // background-size: cover;
-            // background-position: center;
-            // opacity: .5;
+
         }
     }
 }
@@ -94,19 +84,15 @@
         padding: 1.5rem 0 1rem 0;
 
         @include tablet {
-            // color: $primary-color-black;
             font-size: 2.25rem;
             line-height: 2.75rem;
             padding-top: 3rem;
-            // font-weight: 600;
         }
 
         @include desktop {
-            // color: $primary-color-black;
             font-size: 2.25rem;
             line-height: 2.75rem;
             padding-top: 3rem;
-            // font-weight: 600;
         }
     }
 
@@ -114,14 +100,9 @@
         width: 100%;
 
         @include tablet {
-            // width: 100%;
             padding: 0 2.25rem 0 2.25rem;
         }
 
-        // @include desktop {
-        //     width: 100%;
-        //     padding: 0 2.25rem 0 2.25rem;           
-        // }
     }
 
     &__quote {
@@ -132,15 +113,13 @@
         @include tablet {
             font-size: 2.25rem;
             line-height: 2.75rem;
-            // font-weight: 600;
-            padding: 0 2.25rem 0 2.25rem;
+            padding: 3rem 2.25rem 0 2.25rem;
         }
 
         @include desktop {
             font-size: 2.25rem;
             line-height: 2.75rem;
-            // font-weight: 600;
-            // padding: 0 2.25rem 0 2.25rem; 
+ 
         }
     }
 
@@ -152,15 +131,13 @@
         @include tablet {
             font-size: 1.5rem;
             line-height: 2rem;
-            // font-weight: 600;
-            padding: 0 2.25rem 0 2.25rem;
+            padding: 3rem 2.25rem 0 2.25rem;
         }
 
         @include desktop {
             font-size: 1.5rem;
             line-height: 2rem;
-            // font-weight: 600;
-            // padding: 0 2.25rem 0 2.25rem; 
+
         }
     }
 
@@ -172,17 +149,15 @@
         @include tablet {
             font-size: 0.875rem;
             line-height: 1.375rem;
-            // font-weight: 400;
-            padding: 0 2.25rem 1rem 2.25rem;
+            padding: 3rem 2.25rem 1rem 2.25rem;
             columns: 2;
         }
 
         @include desktop {
             font-size: 0.875rem;
             line-height: 1.375rem;
-            // font-weight: 400;
-            // padding: 0 2.25rem 1rem 2.25rem;
-            // columns: 2;
+
+
 
         }
     }
@@ -200,15 +175,9 @@
 
         @include tablet {
             font-size: 2.25rem;
-            // font-weight: 600;
             padding: 3rem 2.25rem 1rem 2.25rem;
         }
 
-        // @include desktop {
-        //     font-size: 2.25rem;
-        //     font-weight: 600;
-        //     padding: 3rem 2.25rem 1rem 2.25rem;
-        // }
     }
 
     &__box {
@@ -220,8 +189,7 @@
         }
 
         @include desktop {
-            // display: flex;
-            // flex-wrap: wrap;
+
             padding: 2.25rem 2.25rem 2.25rem 5rem;
 
         }
@@ -238,11 +206,6 @@
 
         }
 
-        // @include desktop {
-        //     width: 33%;
-        //     padding: .8rem;
-
-        // }
 
         &--link:hover {
             filter: grayscale(0);

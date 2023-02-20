@@ -359,7 +359,7 @@ body {
   .bio__quote {
     font-size: 2.25rem;
     line-height: 2.75rem;
-    padding: 0 2.25rem 0 2.25rem;
+    padding: 3rem 2.25rem 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -377,7 +377,7 @@ body {
   .bio__subtitle {
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 0 2.25rem 0 2.25rem;
+    padding: 3rem 2.25rem 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -395,7 +395,7 @@ body {
   .bio__story {
     font-size: 0.875rem;
     line-height: 1.375rem;
-    padding: 0 2.25rem 1rem 2.25rem;
+    padding: 3rem 2.25rem 1rem 2.25rem;
     -moz-columns: 2;
          columns: 2;
   }
