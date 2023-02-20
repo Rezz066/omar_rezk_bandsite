@@ -453,9 +453,21 @@ body {
 }
 
 .form {
-  box-sizing: border-box;
-  font-family: "AvenirNextLTPro";
-  margin: 0 2.25rem 0 2.25rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .form__title {
   font-size: 2rem;
@@ -466,7 +478,7 @@ body {
 .form__container {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 3.5rem;
   padding: 1.5rem 0 1rem 1rem;
 }
 .form__image {
@@ -482,6 +494,7 @@ body {
 .form__box {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 .form__label {
   display: block;
@@ -496,14 +509,18 @@ body {
   border-radius: 0.25rem;
   width: 100%;
   margin: 0.25rem 0 2.25rem 0;
+  border-radius: 4px;
 }
 .form__message {
   font-family: "AvenirNextLTPro", sans-serif;
   height: 8rem;
   padding: 0.75rem;
   border-radius: 0.25rem;
-  width: 77vw;
   margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+.form__error {
+  border: 1px solid #D22D2D;
 }
 .form__button {
   font-size: 1rem;
@@ -536,7 +553,20 @@ body {
   flex-direction: column;
   padding-bottom: 2rem;
   padding: 1.5rem 0 1rem 1rem;
-  margin: 0;
+  margin-right: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .comments {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .comments__container {
   width: 100%;
@@ -560,6 +590,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 .comments__title {
   font-size: 1rem;
@@ -570,4 +601,11 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: #AFAFAF;
+}
+.comments__text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #323232;
+  padding-left: 2.5rem;
+  padding-bottom: 1.5rem;
 }/*# sourceMappingURL=bio.css.map */

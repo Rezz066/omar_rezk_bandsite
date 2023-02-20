@@ -21,6 +21,8 @@ const commentsList = [
 
 const formEl = document.querySelector('.form')
 const commentEl = document.querySelector('.comments')
+const errorEl = document.querySelector('.comments__text--error')
+
 
 
 formEl.addEventListener('submit', (event) => {
@@ -32,7 +34,16 @@ formEl.addEventListener('submit', (event) => {
     const dates = new Date();
     const today = dates.getDate()  + '/' + (dates.getMonth() + 1) + '/' + dates.getFullYear()
 
+    if (event.target.name.value === '' || event.target.comments.value === ''){
+        const nameInput = document.querySelector('.form__text')
+        const commentsInput = document.querySelector('.form__message')
 
+        nameInput.classList.add('form__error')
+        commentsInput.classList.add('form__error')
+
+        event.target.reset()
+        return
+    }
 
     commentsList.unshift({
         name: name,

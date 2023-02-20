@@ -43,9 +43,13 @@ const section = document.querySelector('.shows')
         const events = showsData[i]
         console.log(events)
 
+        const showsContentEl = document.createElement('div')
+        showsContentEl.classList.add('shows__content')
+        section.appendChild(showsContentEl)
+
         const showsContainerEl = document.createElement('div')
         showsContainerEl.classList.add('shows__container')
-        section.appendChild(showsContainerEl)
+        showsContentEl.appendChild(showsContainerEl)
 
         //create shows label inside parent (shows Container)
         const showsLabelEl = document.createElement('div')
@@ -53,20 +57,20 @@ const section = document.querySelector('.shows')
         showsContainerEl.appendChild(showsLabelEl)
 
         //create shows title inside parent (shows Label)
-        const showsDateTitleEl = document.createElement('h4')
-        showsDateTitleEl.classList.add('shows__title')
-        showsDateTitleEl.innerText = "DATE";
-        showsLabelEl.appendChild(showsDateTitleEl)
+        // const showsDateTitleEl = document.createElement('h4')
+        // showsDateTitleEl.classList.add('shows__title')
+        // showsDateTitleEl.innerText = "DATE";
+        // showsLabelEl.appendChild(showsDateTitleEl)
 
-        const showsVenueTitleEl = document.createElement('h4')
-        showsVenueTitleEl.classList.add('shows__title')
-        showsVenueTitleEl.innerText = "VENUE";
-        showsLabelEl.appendChild(showsVenueTitleEl)
+        // const showsVenueTitleEl = document.createElement('h4')
+        // showsVenueTitleEl.classList.add('shows__title')
+        // showsVenueTitleEl.innerText = "VENUE";
+        // showsLabelEl.appendChild(showsVenueTitleEl)
 
-        const showsLocationTitleEl = document.createElement('h4')
-        showsLocationTitleEl.classList.add('shows__title')
-        showsLocationTitleEl.innerText = "LOCATION";
-        showsLabelEl.appendChild(showsLocationTitleEl)
+        // const showsLocationTitleEl = document.createElement('h4')
+        // showsLocationTitleEl.classList.add('shows__title')
+        // showsLocationTitleEl.innerText = "LOCATION";
+        // showsLabelEl.appendChild(showsLocationTitleEl)
 
         //create Shows Events inside parent (Shows Container)
         const showsEventEl = document.createElement('div')
@@ -132,7 +136,7 @@ const section = document.querySelector('.shows')
 
         //create Shows Button Link inside parent (Shows Button)
         const showsButtonLinkEl = document.createElement('p')
-        showsButtonLinkEl.classList.add('shows__button--link')
+        showsButtonLinkEl.classList.add('shows__text')
         showsButtonLinkEl.innerText = "BUY TICKETS"
         showsButtonEl.appendChild(showsButtonLinkEl)
     }

@@ -254,9 +254,19 @@
 }
 
 .form {
-    box-sizing: border-box;
-    font-family: 'AvenirNextLTPro';
-    margin: 0 2.25rem 0 2.25rem;
+    padding: 1rem;
+
+    @include tablet{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include desktop{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     &__title {
         font-size: 2rem;
@@ -268,7 +278,7 @@
     &__container {
         display: flex;
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 3.5rem;
         padding: 1.5rem 0 1rem 1rem;
 
     }
@@ -286,6 +296,7 @@
     &__box{
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
 
     &__label {
@@ -302,6 +313,9 @@
         border-radius: .25rem;
         width: 100%;
         margin: .25rem 0 2.25rem 0;
+        border-radius: 4px;
+
+
     }
 
     &__message {
@@ -309,9 +323,14 @@
         height: 8rem;
         padding: .75rem;
         border-radius: .25rem;
-        width: 77vw;
         margin-bottom: 1.5rem;
+        border-radius: 4px;
+
     }
+
+    &__error{
+        border: 1px solid  #D22D2D;
+}
 
     &__button {
         font-size: 1rem;
@@ -347,15 +366,23 @@
     flex-direction: column;
     padding-bottom: 2rem;
     padding: 1.5rem 0 1rem 1rem;
-    margin: 0;
+    margin-right: 2.5rem;
 
     @include tablet{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    @include desktop{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__container {
         width: 100%;
         padding: 1.5rem 0 1rem 1rem;
+
 
     }
 
@@ -380,6 +407,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-bottom: 1rem;
 
     }
 
@@ -387,12 +415,23 @@
         font-size: 1rem;
         font-weight: 600;
         color: $primary-color-black;
+
     }
 
     &__date{
         font-size: 1rem;
         font-weight: 400;
         color: $primary-color-silver;
+    }
+
+    &__text{
+        font-size: 1rem;
+        font-weight: 400;
+        color: $primary-color-black;
+        padding-left: 2.5rem;
+        padding-bottom: 1.5rem;
+
+
     }
 
 }
