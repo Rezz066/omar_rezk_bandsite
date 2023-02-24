@@ -28,19 +28,15 @@
         z-index: 999;
 
         @include tablet {
-            // color: $primary-color-white;
             font-size: 3.25rem;
             padding-left: 3rem;
-            // font-weight: 600;
-            // z-index: 999;
+
         }
 
         @include desktop {
-            // color: $primary-color-white;
             font-size: 3.25rem;
             padding-left: 5rem;
-            // font-weight: 600;
-            // z-index: 999;
+
         }
     }
 
@@ -55,13 +51,11 @@
         opacity: .5;
 
         @include tablet {
-
             height: 30rem;
 
         }
 
         @include desktop {
-
             height: 50rem;
 
         }

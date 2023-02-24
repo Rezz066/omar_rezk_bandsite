@@ -112,7 +112,7 @@
         @include desktop{
             margin-right: 3rem;
             margin-top: 18rem;
-            width: 40%;
+            width: 50%;
         }
 
     }
@@ -136,6 +136,24 @@
         font-weight: 600;
     }
 
+    &__titleContainer{
+
+        @include tablet{
+            display: flex;
+        }
+    }
+
+    &__title{
+        display: none;
+
+        @include tablet{
+            display: flex;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $primary-color-silver;
+        }
+    }
+
     &__content{
 
         @include desktop{
@@ -152,17 +170,6 @@
             gap: 5rem;
         }
 
-    }
-
-    &__title{
-        display: none;
-
-        @include tablet{
-            display: flex;
-            font-size: 1rem;
-            font-weight: 600;
-            color: $primary-color-silver;
-        }
     }
 
 
@@ -205,6 +212,7 @@
             display: flex;
             flex-direction: column;
             align-items: baseline;
+            width: 25%;
         }
     }
 
@@ -213,6 +221,10 @@
         font-size: .7rem;
         font-weight: 600;
         color: $primary-color-silver;
+
+        @include tablet{
+            display: none;
+        }
 
     }
 

@@ -36,6 +36,24 @@ const showsData = [
 
 const section = document.querySelector('.shows')
 
+        const sectionContainer = document.createElement('div')
+        sectionContainer.classList.add('shows__titleContainer')
+        section.appendChild(sectionContainer)
+
+        const showsTitleDate = document.createElement('h2')
+        showsTitleDate.classList.add('shows__title')
+        showsTitleDate.innerText = "DATE";
+        sectionContainer.appendChild(showsTitleDate)
+
+        const showsTitleVenue = document.createElement('h2')
+        showsTitleVenue.classList.add('shows__title')
+        showsTitleVenue.innerText = "VENUE";
+        sectionContainer.appendChild(showsTitleVenue)
+
+        const showsTitleLocation = document.createElement('h2')
+        showsTitleLocation.classList.add('shows__title')
+        showsTitleLocation.innerText = "LOCATION";
+        sectionContainer.appendChild(showsTitleLocation)
 
 
 // iterate through a for loop and log data with index [i]
