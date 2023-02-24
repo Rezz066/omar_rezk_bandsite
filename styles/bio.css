@@ -354,6 +354,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-weight: 600;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .bio__quote {
@@ -372,6 +373,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-weight: 600;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .bio__subtitle {

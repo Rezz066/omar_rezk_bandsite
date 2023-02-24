@@ -14,7 +14,6 @@
     @include tablet {
         height: 30rem;
 
-
         @include desktop {
             height: 50rem;
 
@@ -109,6 +108,7 @@
         font-size: 0.875rem;
         line-height: 1.375rem;
         font-weight: 600;
+        padding-bottom: 1rem;
 
         @include tablet {
             font-size: 2.25rem;
@@ -127,6 +127,7 @@
         font-size: 0.875rem;
         line-height: 1.375rem;
         font-weight: 600;
+        padding-bottom: 1rem;
 
         @include tablet {
             font-size: 1.5rem;

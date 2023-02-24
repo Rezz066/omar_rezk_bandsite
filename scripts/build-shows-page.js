@@ -118,3 +118,5 @@ const section = document.querySelector('.shows')
         showsButtonLinkEl.innerText = "BUY TICKETS"
         showsButtonEl.appendChild(showsButtonLinkEl)
     }
+
+    

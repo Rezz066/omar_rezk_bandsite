@@ -23,6 +23,20 @@ const formEl = document.querySelector('.form')
 const commentEl = document.querySelector('.comments')
 const errorEl = document.querySelector('.comments__text--error')
 
+//Add API KEY and API URL
+
+const API_URL = "https://project-1-api.herokuapp.com/comments"
+const API_KEY = "064514e8-11a9-4374-9e07-47cd83c24834"
+
+
+const url = API_URL + `?api_key=${API_KEY}`
+
+
+axios.get(url)
+.then( (response) => {
+    console.log(response)
+})
+
 
 
 formEl.addEventListener('submit', (event) => {
@@ -52,6 +66,7 @@ formEl.addEventListener('submit', (event) => {
     });
 
     renderComments()
+
 
     event.target.reset()
 
@@ -101,11 +116,4 @@ function renderComments () {
 }
 
 renderComments()
-
-
-
-
-
-
-
 
