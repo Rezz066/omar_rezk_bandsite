@@ -288,7 +288,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .hero__title {
-    font-size: 3.25rem;
     padding-left: 5rem;
   }
 }
@@ -335,13 +334,6 @@ body {
     padding-top: 3rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  .bio__title {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    padding-top: 3rem;
-  }
-}
 .bio__image {
   width: 100%;
 }
@@ -363,12 +355,6 @@ body {
     padding: 3rem 2.25rem 0 2.25rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  .bio__quote {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-  }
-}
 .bio__subtitle {
   font-size: 0.875rem;
   line-height: 1.375rem;
@@ -380,12 +366,6 @@ body {
     font-size: 1.5rem;
     line-height: 2rem;
     padding: 3rem 2.25rem 0 2.25rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .bio__subtitle {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 .bio__story {
@@ -467,8 +447,6 @@ body {
 @media screen and (min-width: 1280px) {
   .form {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .form__title {
@@ -520,6 +498,7 @@ body {
   border-radius: 0.25rem;
   margin-bottom: 1.5rem;
   border-radius: 4px;
+  resize: none;
 }
 .form__error {
   border: 1px solid #D22D2D;
@@ -560,12 +539,6 @@ body {
 @media screen and (min-width: 768px) {
   .comments {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .comments {
     margin-left: auto;
     margin-right: auto;
   }

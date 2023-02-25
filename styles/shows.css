@@ -379,16 +379,24 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .shows {
-    margin: 1rem 2rem 0 2rem;
+    margin: 1rem 2rem 2rem 2rem;
   }
 }
 .shows__header {
   font-size: 2rem;
   font-weight: 600;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .shows__titleContainer {
     display: flex;
+    margin-left: 3.9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows__titleContainer {
+    margin-left: 19rem;
+    margin-right: 3.4rem;
   }
 }
 .shows__title {
@@ -397,9 +405,10 @@ body {
 @media screen and (min-width: 768px) {
   .shows__title {
     display: flex;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: #AFAFAF;
+    width: 24.1%;
   }
 }
 @media screen and (min-width: 1280px) {
