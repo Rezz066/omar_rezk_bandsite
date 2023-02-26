@@ -131,6 +131,13 @@
         margin: 1rem 2rem 2rem 2rem;
     }
 
+    &__headerBox{
+        
+        @include tablet{
+            display: flex;
+            align-items: baseline;
+        }
+    }
     &__header{
         font-size: 2rem;
         font-weight: 600;
@@ -141,12 +148,13 @@
 
         @include tablet{
             display: flex;
-            margin-left: 3.9rem;
+            gap: 12.7rem;
+
 
         }
 
         @include desktop{
-            margin-left: 19rem;
+            margin-left: 13rem;
             margin-right: 3.4rem;
         }
     }
@@ -156,7 +164,7 @@
 
         @include tablet{
             display: flex;
-            font-size: .7rem;
+            font-size: 1rem;
             font-weight: 600;
             color: $primary-color-silver;
             width: 24.1%;
@@ -164,9 +172,14 @@
     }
 
     &__content{
+        cursor: pointer;
 
         @include desktop{
             margin-left: 12rem;
+        }
+
+        &__active{
+            background-color: $secondary-color-mercury;
         }
     }
 

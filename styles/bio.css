@@ -491,6 +491,10 @@ body {
   margin: 0.25rem 0 2.25rem 0;
   border-radius: 4px;
 }
+.form__text:focus-visible {
+  outline: none;
+  border-color: #000;
+}
 .form__message {
   font-family: "AvenirNextLTPro", sans-serif;
   height: 8rem;
@@ -499,6 +503,10 @@ body {
   margin-bottom: 1.5rem;
   border-radius: 4px;
   resize: none;
+}
+.form__message:focus-visible {
+  outline: none;
+  border-color: #000;
 }
 .form__error {
   border: 1px solid #D22D2D;

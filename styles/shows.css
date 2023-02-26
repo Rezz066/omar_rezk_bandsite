@@ -382,6 +382,12 @@ body {
     margin: 1rem 2rem 2rem 2rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .shows__headerBox {
+    display: flex;
+    align-items: baseline;
+  }
+}
 .shows__header {
   font-size: 2rem;
   font-weight: 600;
@@ -390,12 +396,12 @@ body {
 @media screen and (min-width: 768px) {
   .shows__titleContainer {
     display: flex;
-    margin-left: 3.9rem;
+    gap: 12.7rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .shows__titleContainer {
-    margin-left: 19rem;
+    margin-left: 13rem;
     margin-right: 3.4rem;
   }
 }
@@ -405,16 +411,22 @@ body {
 @media screen and (min-width: 768px) {
   .shows__title {
     display: flex;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #AFAFAF;
     width: 24.1%;
   }
 }
+.shows__content {
+  cursor: pointer;
+}
 @media screen and (min-width: 1280px) {
   .shows__content {
     margin-left: 12rem;
   }
+}
+.shows__content__active {
+  background-color: #E1E1E1;
 }
 .shows__label {
   display: none;

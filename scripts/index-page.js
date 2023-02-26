@@ -45,18 +45,9 @@ formEl.addEventListener('submit', (event) => {
 
     const name = event.target.name.value;
     const comments = event.target.comments.value;
-    const dates = new Date();
-    const today = dates.getDate()  + '/' + (dates.getMonth() + 1) + '/' + dates.getFullYear()
+    // const dates = new Date();
+    // const today = dates.getDate()  + '/' + (dates.getMonth() + 1) + '/' + dates.getFullYear()
 
-
-    axios
-        .post(`${API_URL}?api_key=${API_KEY}`, {
-            name: name,
-            comment: comments
-        })
-        .then((response) => {
-            getComments()})
-        .catch(error => console.log(error))
 
 
     if (event.target.name.value === '' || event.target.comments.value === ''){
@@ -69,6 +60,15 @@ formEl.addEventListener('submit', (event) => {
         event.target.reset()
         return
     }
+
+    axios
+        .post(`${API_URL}?api_key=${API_KEY}`, {
+            name: name,
+            comment: comments
+        })
+        .then((response) => {
+            getComments()})
+        .catch(error => console.log(error))
 
 
     event.target.reset()
@@ -103,7 +103,6 @@ function renderComments (commentItems) {
         const dateEl = document.createElement('p')
         dateEl.classList.add('comments__date')
         const formattedDate = new Date(commentItems.timestamp);
-        console.log(formattedDate);
         const finalDate = (formattedDate.getMonth() + 1) + '/' + formattedDate.getDate()  + '/' + formattedDate.getFullYear();
         dateEl.innerText = finalDate
         commentsHeaderEl.appendChild(dateEl)

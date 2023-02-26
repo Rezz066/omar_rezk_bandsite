@@ -1,7 +1,9 @@
-
 // The Skeleton of the show container, event dates and location
 
 const section = document.querySelector('.shows')
+const showsLink = document.querySelector('.shows__content')
+const showsHeaderBox = document.querySelector('.shows__headerBox')
+
 
 const API_URL = "https://project-1-api.herokuapp.com/showdates"
 const API_KEY = "6f964ab1-8dc4-461d-b82a-fa87241c5278"
@@ -20,15 +22,24 @@ axios.get(url)
                     showEvents (ele)
                 })
             })
-
-
 }
+
+// showsLink.addEventListener('onclick', (event) => {
+
+//     event.preventDefault()
+
+//     showsLink.classList.add('shows__content--active')
+
+//     event.target.reset()
+// })
+
 
 getShows()
 
+
         const sectionContainer = document.createElement('div')
         sectionContainer.classList.add('shows__titleContainer')
-        section.appendChild(sectionContainer)
+        showsHeaderBox.appendChild(sectionContainer)
 
         const showsTitleDate = document.createElement('h2')
         showsTitleDate.classList.add('shows__title')

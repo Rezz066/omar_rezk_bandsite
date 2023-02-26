@@ -254,6 +254,11 @@
         margin: .25rem 0 2.25rem 0;
         border-radius: 4px;
 
+        &:focus-visible{
+            outline: none;
+            border-color: #000;
+        }
+
 
     }
 
@@ -265,6 +270,11 @@
         margin-bottom: 1.5rem;
         border-radius: 4px;
         resize: none;
+
+        &:focus-visible{
+            outline: none;
+            border-color: #000;
+        }
 
     }
 
