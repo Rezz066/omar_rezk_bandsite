@@ -149,7 +149,8 @@
 
         @include tablet{
             display: flex;
-            gap: 1rem;
+            width: 25%;
+            margin-left: 4rem;
 
         }
 
@@ -162,15 +163,15 @@
             font-size: 1rem;
             font-weight: 600;
             color: $primary-color-silver;
-            margin-left: 4rem;
 
             @include tablet {
-                width: 11%;
+                width: 25%;
             }
 
             @include desktop{
-                width: 15%;
+                width: 25%;
             }
+
     }
 
     &__titleContainer{
@@ -184,8 +185,7 @@
         @include desktop{
             display: flex;
             margin-left: 13rem;
-            margin-right: 3.4rem;
-            gap: 9.5rem;
+            gap: 10.5rem;
         }
     }
 
@@ -208,10 +208,6 @@
             margin-left: 12rem;
         }
 
-        &--selected:active{
-            pointer-events: none;
-            background-color: $secondary-color-mercury;
-        }
     }
 
     &__label{
@@ -320,4 +316,7 @@
         box-sizing: content-box;
 
     }
+}
+[shows-active = true]{
+    background-color: $secondary-color-mercury;
 }

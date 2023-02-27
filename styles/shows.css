@@ -392,7 +392,8 @@ body {
 @media screen and (min-width: 768px) {
   .shows__containerTab {
     display: flex;
-    gap: 1rem;
+    width: 25%;
+    margin-left: 4rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -404,16 +405,15 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: #AFAFAF;
-  margin-left: 4rem;
 }
 @media screen and (min-width: 768px) {
   .shows__titleTab {
-    width: 11%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 1280px) {
   .shows__titleTab {
-    width: 15%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -426,8 +426,7 @@ body {
   .shows__titleContainer {
     display: flex;
     margin-left: 13rem;
-    margin-right: 3.4rem;
-    gap: 9.5rem;
+    gap: 10.5rem;
   }
 }
 .shows__title {
@@ -449,10 +448,6 @@ body {
   .shows__content {
     margin-left: 12rem;
   }
-}
-.shows__content--selected:active {
-  pointer-events: none;
-  background-color: #E1E1E1;
 }
 .shows__label {
   display: none;
@@ -546,4 +541,8 @@ body {
   color: #FFFFFF;
   line-height: 40px;
   box-sizing: content-box;
+}
+
+[shows-active=true] {
+  background-color: #E1E1E1;
 }/*# sourceMappingURL=shows.css.map */

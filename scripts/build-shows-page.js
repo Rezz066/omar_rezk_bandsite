@@ -22,27 +22,42 @@ axios.get(url)
                     showEvents (ele)
                 })
             })
+        .finally(() => {
+            showsLinkEl();
+        });
+            
 }
-
-
 
 getShows()
 
 
-showsLink.forEach(ele => {
-    ele.addEventListener('click', () => {
-        showsLink.forEach(element => element.classList.remove("shows__content--selected"));
-        this.classList.add('shows__content--selected')
-        })
-    })
+function showsLinkEl (){
+    const showsLinkElement = document.querySelectorAll('.shows__content')
+    const showsEventHoverLink = document.querySelectorAll('.shows__event')
+    showsLinkElement.forEach(event =>{
+        event.addEventListener('click', function(){
+            showsLinkElement.forEach(e =>{
+                e.setAttribute('shows-active', 'false')
+            })
+           this.setAttribute('shows-active', 'true')
+           showsEventHoverLink.classList.remove('shows__event--link')
+        });
+      })
+}
+// showsLink.forEach(ele => {
+//     ele.addEventListener('click', () => {
+//         showsLink.forEach(element => element.classList.remove("shows__content--selected"));
+//         this.classList.add('shows__content--selected')
+//         })
+//     })
 
-window.addEventListener('click', (event) => {
-    if (event.target.closest('.shows__content'))
-    return 
+// window.addEventListener('click', (event) => {
+//     if (event.target.closest('.shows__content'))
+//     return 
     
-    showsLink.forEach(element => element.classList.remove("shows__content--selected"))
+//     showsLink.forEach(element => element.classList.remove("shows__content--selected"))
 
-})
+// })
 
 
 /////////////// subtitles on desktop view  ///////////////
@@ -94,6 +109,7 @@ function showEvents (ele){
     
     const showsContentEl = document.createElement('div')
     showsContentEl.classList.add('shows__content')
+    showsContentEl.setAttribute('shows-active', 'false')
     section.appendChild(showsContentEl)
 
     const showsContainerEl = document.createElement('div')
