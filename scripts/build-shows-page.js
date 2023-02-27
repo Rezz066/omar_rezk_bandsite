@@ -1,7 +1,7 @@
 // The Skeleton of the show container, event dates and location
 
 const section = document.querySelector('.shows')
-const showsLink = document.querySelector('.shows__content')
+const showsLink = document.querySelectorAll('.shows__content')
 const showsHeaderBox = document.querySelector('.shows__headerBox')
 
 
@@ -24,18 +24,28 @@ axios.get(url)
             })
 }
 
-// showsLink.addEventListener('onclick', (event) => {
-
-//     event.preventDefault()
-
-//     showsLink.classList.add('shows__content--active')
-
-//     event.target.reset()
-// })
 
 
 getShows()
 
+
+showsLink.forEach(ele => {
+    ele.addEventListener('click', () => {
+        showsLink.forEach(element => element.classList.remove("shows__content--selected"));
+        this.classList.add('shows__content--selected')
+        })
+    })
+
+window.addEventListener('click', (event) => {
+    if (event.target.closest('.shows__content'))
+    return 
+    
+    showsLink.forEach(element => element.classList.remove("shows__content--selected"))
+
+})
+
+
+/////////////// subtitles on desktop view  ///////////////
 
         const sectionContainer = document.createElement('div')
         sectionContainer.classList.add('shows__titleContainer')
@@ -55,6 +65,29 @@ getShows()
         showsTitleLocation.classList.add('shows__title')
         showsTitleLocation.innerText = "LOCATION";
         sectionContainer.appendChild(showsTitleLocation)
+
+
+/////////////// subtitles on tablet view  ///////////////
+        const showsContainerTab = document.createElement('div')
+        showsContainerTab.classList.add('shows__containerTab')
+        section.appendChild(showsContainerTab)
+
+        const showsTitleDateTab = document.createElement('h2')
+        showsTitleDateTab.classList.add('shows__titleTab')
+        showsTitleDateTab.innerText = "DATE";
+        showsContainerTab.appendChild(showsTitleDateTab)
+
+        const showsTitleVenueTab = document.createElement('h2')
+        showsTitleVenueTab.classList.add('shows__titleTab')
+        showsTitleVenueTab.innerText = "VENUE";
+        showsContainerTab.appendChild(showsTitleVenueTab)
+
+        const showsTitleLocationTab = document.createElement('h2')
+        showsTitleLocationTab.classList.add('shows__titleTab')
+        showsTitleLocationTab.innerText = "LOCATION";
+        showsContainerTab.appendChild(showsTitleLocationTab)
+        
+
 
 
 function showEvents (ele){

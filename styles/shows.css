@@ -137,7 +137,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer {
-    position: relative;
     padding: 2.25rem 2.25rem 2.25rem 5rem;
   }
 }
@@ -171,7 +170,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer__box {
-    display: flex;
     flex-direction: row;
     align-items: baseline;
   }
@@ -236,19 +234,14 @@ body {
   font-weight: 400;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 768px) {
-  .footer__logoimage {
-    display: none;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__logoimage {
-    display: none;
-  }
-}
 .footer__logo {
   width: 7.5rem;
   height: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: none;
+  }
 }
 .footer__copyright {
   font-size: 1rem;
@@ -393,16 +386,48 @@ body {
   font-weight: 600;
   padding-bottom: 1rem;
 }
+.shows__containerTab {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .shows__containerTab {
+    display: flex;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows__containerTab {
+    display: none;
+  }
+}
+.shows__titleTab {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #AFAFAF;
+  margin-left: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__titleTab {
+    width: 11%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows__titleTab {
+    width: 15%;
+  }
+}
 @media screen and (min-width: 768px) {
   .shows__titleContainer {
-    display: flex;
-    gap: 12.7rem;
+    display: none;
+    width: 25%;
   }
 }
 @media screen and (min-width: 1280px) {
   .shows__titleContainer {
+    display: flex;
     margin-left: 13rem;
     margin-right: 3.4rem;
+    gap: 9.5rem;
   }
 }
 .shows__title {
@@ -425,7 +450,8 @@ body {
     margin-left: 12rem;
   }
 }
-.shows__content__active {
+.shows__content--selected:active {
+  pointer-events: none;
   background-color: #E1E1E1;
 }
 .shows__label {
@@ -446,7 +472,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .shows__event {
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -462,9 +487,6 @@ body {
 }
 .shows__event--link:hover {
   background-color: #FAFAFA;
-}
-.shows__event--link:selected {
-  background-color: #E1E1E1;
 }
 .shows__box {
   padding: 0 2rem 0 2rem;

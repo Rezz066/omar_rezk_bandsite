@@ -51,6 +51,7 @@ body{
         }
 
     }
+
     &__list{
         font-size: 1.5rem;
         display: flex;
@@ -111,14 +112,15 @@ body{
         }
  
     }
+
         
        &__link{
         color: $primary-color-white;
         text-decoration: none;
         list-style-type: none;
-
-
+        
     } 
+
 }
 
 .footer{
@@ -131,7 +133,6 @@ body{
     }
 
     @include desktop {
-        position: relative;
         padding: 2.25rem 2.25rem 2.25rem 5rem;
 
         
@@ -170,7 +171,6 @@ body{
         padding-bottom: 1rem;
 
         @include tablet {
-            display: flex;
             flex-direction: row;
             align-items: baseline;
         }
@@ -254,21 +254,14 @@ body{
         padding-bottom: 1rem;
     }
 
-    &__logoimage{
-
-        @include tablet {
-            display: none;
-        }
-
-        @include desktop {
-            display: none;
-        }
-    }
 
     &__logo{
         width: 7.5rem;
         height: 1.25rem;
 
+        @include tablet {
+            display: none;
+        }
 
 
     }

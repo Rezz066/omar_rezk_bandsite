@@ -144,18 +144,48 @@
         padding-bottom: 1rem;
     }
 
-    &__titleContainer{
+    &__containerTab{
+        display: none;
 
         @include tablet{
             display: flex;
-            gap: 12.7rem;
-
+            gap: 1rem;
 
         }
 
         @include desktop{
+            display: none;
+        }
+    }
+
+    &__titleTab{
+            font-size: 1rem;
+            font-weight: 600;
+            color: $primary-color-silver;
+            margin-left: 4rem;
+
+            @include tablet {
+                width: 11%;
+            }
+
+            @include desktop{
+                width: 15%;
+            }
+    }
+
+    &__titleContainer{
+
+        @include tablet{
+            display: none;
+            width: 25%;
+
+        }
+
+        @include desktop{
+            display: flex;
             margin-left: 13rem;
             margin-right: 3.4rem;
+            gap: 9.5rem;
         }
     }
 
@@ -178,7 +208,8 @@
             margin-left: 12rem;
         }
 
-        &__active{
+        &--selected:active{
+            pointer-events: none;
             background-color: $secondary-color-mercury;
         }
     }
@@ -203,7 +234,6 @@
 
 
         @include tablet {
-            display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
@@ -221,9 +251,6 @@
             background-color: $secondary-color-alabaster;
         }
 
-        &--link:selected{
-            background-color: $secondary-color-mercury;
-        }
     }
 
 
